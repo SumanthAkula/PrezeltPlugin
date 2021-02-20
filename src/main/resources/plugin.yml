@@ -1,0 +1,19 @@
+name: PrezeltPlugin
+version: @version@
+main: com.notsumo.prezelt.prezeltplugin.PrezeltPlugin
+api-version: 1.16
+prefix: PREZELT
+load: STARTUP
+authors: [ notsumo ]
+description: a plugin that adds pretzels (in the form of pretzel sticks) to minecraft. duh
+
+permissions:
+  prezelt.givepretzel.use:
+    default: op
+
+commands:
+  givepretzel:
+    description: give the player a pretzel
+    permission: prezelt.givepretzel.use
+    usage: /givepretzel [player]
+    permission-message: you gotta have the prezelt.givepretzel.use permission!
