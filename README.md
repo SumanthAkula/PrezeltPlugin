@@ -20,9 +20,10 @@ There are a few ways:
 Next question.  
 
 ## Commands:
-`/givepretzel [player]` the `[player]` part is optional if the command is run by a player who is online.  If run from
- the server console, the `[player]` part is required.  To run this command, you either gotta be a server operator, or
-  have the `prezelt.givepretzel.use` permission.  
+* `/givepretzel [player]` 
+  * the `[player]` part is optional if the command is run by a player who is online.  If run from the server console, the `[player]` part is required.  To run this command, you either gotta be a server operator, or have the `prezelt.givepretzel.use` permission.  
+* `/prezelt_reload`
+  * reloads `config.yml`
   
 ## Permissions:
 * `prezelt.givepretzel.use` gives you permission to use the `/givepretzel [pretzel]` command
