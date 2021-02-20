@@ -1,0 +1,5 @@
+# drop rates must be a number between 0 and 1 (0 being a 0% chance and a 1 being a 100% chance of a pretzel stick
+# dropping when the mob is killed
+wither_drop_rate: 0.10
+charged_creeper_drop_rate: 0.01
+ender_dragon_drop_rate: 0.25
