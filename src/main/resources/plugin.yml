@@ -8,12 +8,19 @@ authors: [ notsumo ]
 description: a plugin that adds pretzels (in the form of pretzel sticks) to minecraft. duh
 
 permissions:
+  prezelt.reload.use:
+    default: op
   prezelt.givepretzel.use:
     default: op
 
 commands:
+  reload:
+    description: reloads the config.yml
+    permission: prezelt.reload.use
+    permission-message: you gotta have the prezelt.reload.use permission!
+    usage: /prezelt_reload
   givepretzel:
     description: give the player a pretzel
     permission: prezelt.givepretzel.use
-    usage: /givepretzel [player]
     permission-message: you gotta have the prezelt.givepretzel.use permission!
+    usage: /givepretzel [player]
