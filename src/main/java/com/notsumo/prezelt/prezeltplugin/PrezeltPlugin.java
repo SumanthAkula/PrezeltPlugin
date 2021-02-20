@@ -13,6 +13,7 @@ public final class PrezeltPlugin extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		this.getServer().getLogger().log(Level.INFO, "YOOO WE IN HERE!");
+		saveDefaultConfig();
 		ItemManager.init();
 		new GibPretzelCommand(this);
 		new WitherKilledEvent(this);
