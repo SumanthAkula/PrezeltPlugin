@@ -1,6 +1,7 @@
 package com.notsumo.prezelt.prezeltplugin;
 
 import com.notsumo.prezelt.prezeltplugin.commands.GibPretzelCommand;
+import com.notsumo.prezelt.prezeltplugin.commands.ReloadCommand;
 import com.notsumo.prezelt.prezeltplugin.events.ChargedCreeperKilledEvent;
 import com.notsumo.prezelt.prezeltplugin.events.WitherKilledEvent;
 import com.notsumo.prezelt.prezeltplugin.items.ItemManager;
@@ -12,9 +13,10 @@ public final class PrezeltPlugin extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-		this.getServer().getLogger().log(Level.INFO, "YOOO WE IN HERE!");
+		this.getLogger().log(Level.INFO, "YOOO WE IN HERE!");
 		saveDefaultConfig();
 		ItemManager.init();
+		new ReloadCommand(this);
 		new GibPretzelCommand(this);
 		new WitherKilledEvent(this);
 		new ChargedCreeperKilledEvent(this);
