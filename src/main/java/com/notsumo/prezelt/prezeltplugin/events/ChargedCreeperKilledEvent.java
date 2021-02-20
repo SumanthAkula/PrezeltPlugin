@@ -28,7 +28,7 @@ public class ChargedCreeperKilledEvent implements Listener {
 			return;
 		}
 
-		if (Math.random() < 0.25) {
+		if (Math.random() < this.PLUGIN.getConfig().getDouble("charged_creeper_drop_rate")) {
 			entity.getLocation().getWorld().dropItemNaturally(entity.getLocation(), PretzelItem.pretzel.clone());
 		}
 	}

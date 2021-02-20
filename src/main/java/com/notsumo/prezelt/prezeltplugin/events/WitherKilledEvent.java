@@ -24,7 +24,7 @@ public class WitherKilledEvent implements Listener {
 			return;
 		}
 
-		if (Math.random() < 0.25) {
+		if (Math.random() < this.PLUGIN.getConfig().getDouble("wither_drop_rate")) {
 			entity.getLocation().getWorld().dropItemNaturally(entity.getLocation(), PretzelItem.pretzel.clone());
 		}
 	}
