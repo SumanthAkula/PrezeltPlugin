@@ -9,9 +9,10 @@ Absolutely nothing! You could put it in an item frame if you feel like it but th
 
 > How do I get a pretzel stick?
 
-There are a few says:
-* You have a 25% chance of getting one if you kill a Wither
-* You have a 25% chance of getting one if you kill a charged creeper
+There are a few ways:
+* You have a 10% chance of getting one if you kill a Wither
+* You have a 1% chance of getting one if you kill a charged creeper
+* You have a 25% chance of getting one if you kill the Ender Dragon
 * You can run a command to get it if you have permissions for it
 
 > Why is the title of the plugin misspelled?
