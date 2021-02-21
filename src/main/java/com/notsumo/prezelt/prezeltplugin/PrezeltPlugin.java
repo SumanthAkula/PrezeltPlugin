@@ -3,6 +3,7 @@ package com.notsumo.prezelt.prezeltplugin;
 import com.notsumo.prezelt.prezeltplugin.commands.GibPretzelCommand;
 import com.notsumo.prezelt.prezeltplugin.commands.ReloadCommand;
 import com.notsumo.prezelt.prezeltplugin.events.ChargedCreeperKilledEvent;
+import com.notsumo.prezelt.prezeltplugin.events.EnderDragonKilledEvent;
 import com.notsumo.prezelt.prezeltplugin.events.WitherKilledEvent;
 import com.notsumo.prezelt.prezeltplugin.items.ItemManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,6 +21,7 @@ public final class PrezeltPlugin extends JavaPlugin {
 		new GibPretzelCommand(this);
 		new WitherKilledEvent(this);
 		new ChargedCreeperKilledEvent(this);
+		new EnderDragonKilledEvent(this);
 	}
 
 	@Override
