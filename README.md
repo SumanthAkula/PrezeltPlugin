@@ -24,6 +24,8 @@ Next question.
   * the `[player]` part is optional if the command is run by a player who is online.  If run from the server console, the `[player]` part is required.  To run this command, you either gotta be a server operator, or have the `prezelt.givepretzel.use` permission.  
 * `/prezelt_reload`
   * reloads `config.yml`
+  * requires the `prezelt.reload.use` permission
   
 ## Permissions:
 * `prezelt.givepretzel.use` gives you permission to use the `/givepretzel [pretzel]` command
+* `prezelt.reload.use` gives you permission to reload the plugin's config file
