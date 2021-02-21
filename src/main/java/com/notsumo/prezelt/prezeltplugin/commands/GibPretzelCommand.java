@@ -20,6 +20,10 @@ public class GibPretzelCommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+		if (args.length > 1) {
+			sender.sendMessage("Too many arguments!");
+			return false;
+		}
 		if (!(sender instanceof Player)) {
 			if (args.length == 1) {
 				return givePretzelToPlayer(sender, args[0]);
